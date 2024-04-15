@@ -8,14 +8,18 @@ namespace LocacaoDeVeiculos.Models
         [Key]
         public int ID { get; set; }
 
+        [Required]
         [ForeignKey("Cliente")]
         public int IDCliente { get; set; }
 
+        [Required]
         [ForeignKey("Veiculo")]
         public int IDVeiculo { get; set; }
 
+        [Required]
         public DateTime Data_Inicio { get; set; }
 
+        [Required]
         public DateTime Data_Final { get; set; }
 
         public decimal Valor { get; set; }

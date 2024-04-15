@@ -7,6 +7,7 @@ namespace LocacaoDeVeiculos.Models
         [Key]
         public int ID { get; set; }
 
+        [Required]
         public string Nome { get; set; }
 
         public string Endereco { get; set; }
