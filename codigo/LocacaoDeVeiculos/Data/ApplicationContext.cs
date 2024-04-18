@@ -6,7 +6,10 @@ namespace LocacaoDeVeiculos.Data
 {
     public class ApplicationContext : DbContext
     {
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+        {
 
+        }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Veiculo> Veiculos { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
