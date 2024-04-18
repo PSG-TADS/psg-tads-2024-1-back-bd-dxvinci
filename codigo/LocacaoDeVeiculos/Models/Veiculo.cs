@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LocacaoDeVeiculos.Models
 {
@@ -20,6 +21,7 @@ namespace LocacaoDeVeiculos.Models
         public string Tipo { get; set; }
 
         [Required]
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Valor_Diaria { get; set; }
 
     }
