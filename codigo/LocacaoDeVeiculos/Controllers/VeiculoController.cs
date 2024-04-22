@@ -71,6 +71,11 @@ namespace LocacaoDeVeiculos.Controllers
         [HttpPost]
         public async Task<ActionResult<Veiculo>> PostVeiculo(Veiculo veiculo)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             _context.Veiculos.Add(veiculo);
             await _context.SaveChangesAsync();
 

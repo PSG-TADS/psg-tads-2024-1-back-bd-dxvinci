@@ -71,6 +71,11 @@ namespace LocacaoDeVeiculos.Controllers
         [HttpPost]
         public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             _context.Clientes.Add(cliente);
             await _context.SaveChangesAsync();
 

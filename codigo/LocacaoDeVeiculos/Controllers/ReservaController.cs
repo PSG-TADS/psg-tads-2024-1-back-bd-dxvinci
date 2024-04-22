@@ -71,6 +71,11 @@ namespace LocacaoDeVeiculos.Controllers
         [HttpPost]
         public async Task<ActionResult<Reserva>> PostReserva(Reserva reserva)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             _context.Reservas.Add(reserva);
             await _context.SaveChangesAsync();
 
