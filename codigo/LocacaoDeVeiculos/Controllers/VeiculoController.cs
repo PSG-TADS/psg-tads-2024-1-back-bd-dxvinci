@@ -18,6 +18,8 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // GET: api/Veiculos
+        // Recupera uma lista de todos os veículos cadastrados
+        // Retorna um objeto JSON com a lista de veículos (200)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Veiculo>>> GetVeiculos()
         {
@@ -25,6 +27,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // GET: api/Veiculos/5
+        // Recupera um veículo específico pelo ID
+        // Retorna um objeto JSON com o veículo encontrado (200)
+        // ou um erro 404 caso o veículo não seja encontrado
         [HttpGet("{id}")]
         public async Task<ActionResult<Veiculo>> GetVeiculo(int id)
         {
@@ -39,6 +44,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // PUT: api/Veiculos/5
+        // Atualiza um veículo específico pelo ID
+        // Retorna NoContent (204) caso o veículo seja atualizado com sucesso
+        // ou um erro 400 caso o ID do veículo não corresponda ao ID informado
         [HttpPut("{id}")]
         public async Task<IActionResult> PutVeiculo(int id, Veiculo veiculo)
         {
@@ -69,6 +77,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // POST: api/Veiculos
+        // Cadastra um novo veículo
+        // Retorna um objeto JSON com o veículo cadastrado (201)
+        // ou um erro 400 caso o modelo do veículo não seja válido
         [HttpPost]
         public async Task<ActionResult<Veiculo>> PostVeiculo(Veiculo veiculo)
         {
@@ -99,6 +110,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // DELETE: api/Veiculos/5
+        // Deleta um veículo específico pelo ID
+        // Retorna NoContent (204) caso o veículo seja deletado com sucesso
+        // ou um erro 404 caso o veículo não seja encontrado
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteVeiculo(int id)
         {
@@ -114,10 +128,13 @@ namespace LocacaoDeVeiculos.Controllers
             return NoContent();
         }
 
+        // Verifica se já existe um veículo cadastrado com o ID informado
         private async Task<bool> VeiculoExists(int id)
         {
             return await _context.Veiculos.AnyAsync(e => e.ID == id);
         }
+
+        // Verifica se já existe um veículo cadastrado com a placa informada
         private async Task<bool> VeiculoExistsPorPlaca(string placa)
         {
             return await _context.Veiculos.AnyAsync(v => v.Placa == placa);

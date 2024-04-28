@@ -17,6 +17,8 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // GET: api/Reservas
+        // Recupera uma lista de todas as reservas cadastradas
+        // Retorna um objeto JSON com a lista de reservas (200)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Reserva>>> GetReservas()
         {
@@ -24,6 +26,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // GET: api/Reservas/5
+        // Recupera uma reserva específica pelo ID
+        // Retorna um objeto JSON com a reserva encontrada (200)
+        // ou um erro 404 caso a reserva não seja encontrada
         [HttpGet("{id}")]
         public async Task<ActionResult<Reserva>> GetReserva(int id)
         {
@@ -38,6 +43,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // PUT: api/Reservas/5
+        // Atualiza uma reserva específica pelo ID
+        // Retorna NoContent (204) caso a reserva seja atualizada com sucesso
+        // ou um erro 400 caso o ID da reserva não corresponda ao ID informado
         [HttpPut("{id}")]
         public async Task<IActionResult> PutReserva(int id, Reserva reserva)
         {
@@ -77,6 +85,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // POST: api/Reservas
+        // Cria uma nova reserva
+        // Retorna um objeto JSON com a reserva criada (201)
+        // ou um erro 400 caso os dados da reserva sejam inválidos
         [HttpPost]
         public async Task<ActionResult<Reserva>> PostReserva(Reserva reserva)
         {
@@ -125,6 +136,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // DELETE: api/Reservas/5
+        // Deleta uma reserva específica pelo ID
+        // Retorna NoContent (204) caso a reserva seja deletada com sucesso
+        // ou um erro 404 caso a reserva não seja encontrada
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteReserva(int id)
         {

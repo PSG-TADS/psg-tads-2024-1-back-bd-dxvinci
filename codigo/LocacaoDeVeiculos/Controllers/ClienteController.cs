@@ -17,6 +17,8 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // GET: api/Clientes
+        // Recupera uma lista de todos os clientes cadastrados
+        // Retorna um objeto JSON com a lista de clientes (200)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
         {
@@ -24,6 +26,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // GET: api/Clientes/5
+        // Recupera um cliente específico pelo ID
+        // Retorna um objeto JSON com o cliente encontrado (200)
+        // ou um erro 404 caso o cliente não seja encontrado
         [HttpGet("{id}")]
         public async Task<ActionResult<Cliente>> GetCliente(int id)
         {
@@ -38,6 +43,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // PUT: api/Clientes/5
+        // Atualiza um cliente específico pelo ID
+        // Retorna NoContent (204) caso o cliente seja atualizado com sucesso
+        // ou um erro 400 caso o ID do cliente não corresponda ao ID informado
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCliente(int id, Cliente cliente)
         {
@@ -68,6 +76,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // POST: api/Clientes
+        // Cria um novo cliente
+        // Retorna um objeto JSON com o cliente cadastrado (201)
+        // ou um erro 400 caso o cliente não seja válido
         [HttpPost]
         public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
         {
@@ -83,6 +94,9 @@ namespace LocacaoDeVeiculos.Controllers
         }
 
         // DELETE: api/Clientes/5
+        // Deleta um cliente específico pelo ID
+        // Retorna NoContent (204) caso o cliente seja deletado com sucesso
+        // ou um erro 404 caso o cliente não seja encontrado
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCliente(int id)
         {
@@ -98,6 +112,7 @@ namespace LocacaoDeVeiculos.Controllers
             return NoContent();
         }
 
+        // Verifica se um cliente existe pelo ID
         private bool ClienteExists(int id)
         {
             return _context.Clientes.Any(e => e.ID == id);
