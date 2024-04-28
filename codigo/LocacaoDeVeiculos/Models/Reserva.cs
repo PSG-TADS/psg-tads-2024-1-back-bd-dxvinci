@@ -25,7 +25,7 @@ namespace LocacaoDeVeiculos.Models
         [Column(TypeName = "decimal(6, 2)")]
         public decimal Valor { get; set; }
 
-        public string Status { get; set; }
+        public StatusReserva Status { get; set; }
 
     }
 }
