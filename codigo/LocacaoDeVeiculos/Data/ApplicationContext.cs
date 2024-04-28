@@ -18,5 +18,14 @@ namespace LocacaoDeVeiculos.Data
         {
             _ = optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=LocadoraDB;Trusted_Connection=True;TrustServerCertificate=True");
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Reserva>()
+                .Property(p => p.Status)
+                .HasConversion(
+                    v => v.ToString(),
+                    v => (StatusReserva)Enum.Parse(typeof(StatusReserva), v));
+        }
     }
 }

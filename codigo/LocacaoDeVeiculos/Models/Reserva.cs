@@ -9,11 +9,11 @@ namespace LocacaoDeVeiculos.Models
         public int ID { get; set; }
 
         [Required]
-        [ForeignKey("Cliente")]
+        [ForeignKey("Clientes")]
         public int ClienteID { get; set; }
 
         [Required]
-        [ForeignKey("Veiculo")]
+        [ForeignKey("Veiculos")]
         public int VeiculoID { get; set; }
 
         [Required]
@@ -23,10 +23,11 @@ namespace LocacaoDeVeiculos.Models
         public DateTime Data_Final { get; set; }
 
         [Column(TypeName = "decimal(6, 2)")]
-        public decimal Valor { get; set; }
+        public decimal? Valor { get; set; }
 
         [EnumDataType(typeof(StatusReserva))]
-        public StatusReserva Status { get; set; }
+        [Column(TypeName = "nvarchar(20)")]
+        public StatusReserva? Status { get; set; }
 
     }
 }
