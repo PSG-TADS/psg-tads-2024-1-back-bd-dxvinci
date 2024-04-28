@@ -25,6 +25,7 @@ namespace LocacaoDeVeiculos.Models
         [Column(TypeName = "decimal(6, 2)")]
         public decimal Valor { get; set; }
 
+        [EnumDataType(typeof(StatusReserva))]
         public StatusReserva Status { get; set; }
 
     }

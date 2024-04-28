@@ -46,10 +46,19 @@ namespace LocacaoDeVeiculos.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(reserva).State = EntityState.Modified;
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!Enum.IsDefined(typeof(StatusReserva), reserva.Status))
+            {
+                return BadRequest("Status de reserva inválido.");
+            }
 
             try
             {
+                _context.Entry(reserva).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -82,6 +91,21 @@ namespace LocacaoDeVeiculos.Controllers
             if (cliente == null || veiculo == null)
             {
                 return BadRequest("Cliente ou Veículo não encontrados.");
+            }
+
+            if (reserva.Data_Final <= reserva.Data_Inicio)
+            {
+                return BadRequest("Data fianl da reserva não pode ser anterior à data atual.");
+            }
+
+            if (await VeiculoReservado(reserva.VeiculoID, reserva.Data_Inicio, reserva.Data_Final))
+            {
+                return BadRequest("Veículo indisponível no período selecionado.");
+            }
+
+            if (!Enum.IsDefined(typeof(StatusReserva), reserva.Status))
+            {
+                return BadRequest("Status de reserva inválido.");
             }
 
             var novaReserva = new Reserva
@@ -119,6 +143,14 @@ namespace LocacaoDeVeiculos.Controllers
         private bool ReservaExists(int id)
         {
             return _context.Reservas.Any(e => e.ID == id);
+        }
+
+        // Método para verificar se o veículo já não está reservado em um determinado período
+        private async Task<bool> VeiculoReservado(int veiculoID, DateTime dataInicio, DateTime dataFinal)
+        {
+            return await _context.Reservas.AnyAsync(r =>
+                r.VeiculoID == veiculoID &&
+                (dataInicio < r.Data_Final && dataFinal > r.Data_Inicio));
         }
     }
 }
