@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using LocacaoDeVeiculos.Data;
 using LocacaoDeVeiculos.Models;
+using System.Text.RegularExpressions;
 
 namespace LocacaoDeVeiculos.Controllers
 {
@@ -54,7 +55,7 @@ namespace LocacaoDeVeiculos.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!VeiculoExists(id))
+                if (!await VeiculoExists(id))
                 {
                     return NotFound();
                 }
@@ -74,6 +75,21 @@ namespace LocacaoDeVeiculos.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+            }
+
+            if (await VeiculoExistsPorPlaca(veiculo.Placa))
+            {
+                return BadRequest("Já existe um veículo com essa placa cadastrado.");
+            }
+
+            if (!Regex.IsMatch(veiculo.Placa, @"^[A-Z]{3}-\d{4}$"))
+            {
+                return BadRequest("O formato da placa está incorreto.");
+            }
+
+            if (veiculo.Valor_Diaria <= 0)
+            {
+                return BadRequest("O valor da diária deve ser maior que zero.");
             }
 
             _context.Veiculos.Add(veiculo);
@@ -98,9 +114,13 @@ namespace LocacaoDeVeiculos.Controllers
             return NoContent();
         }
 
-        private bool VeiculoExists(int id)
+        private async Task<bool> VeiculoExists(int id)
         {
-            return _context.Veiculos.Any(e => e.ID == id);
+            return await _context.Veiculos.AnyAsync(e => e.ID == id);
+        }
+        private async Task<bool> VeiculoExistsPorPlaca(string placa)
+        {
+            return await _context.Veiculos.AnyAsync(v => v.Placa == placa);
         }
     }
 }
