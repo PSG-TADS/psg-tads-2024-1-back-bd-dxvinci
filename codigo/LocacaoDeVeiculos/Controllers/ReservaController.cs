@@ -154,6 +154,32 @@ namespace LocacaoDeVeiculos.Controllers
             return NoContent();
         }
 
+        // GET: api/Reservas/cliente/5
+        // Recupera uma lista de todas as reservas de um cliente específico
+        // Retorna um objeto JSON com a lista de reservas (200)
+        // ou um erro 404 caso o cliente não seja encontrado
+        [HttpGet("cliente/{clienteId}")]
+        public async Task<ActionResult<IEnumerable<Reserva>>> GetReservasDoUsuario(int clienteId)
+        {
+            var cliente = await _context.Clientes.FindAsync(clienteId);
+            if (cliente == null)
+            {
+                return NotFound("Cliente com o ID informado não encontrado.");
+            }
+
+            var reservas = await _context.Reservas
+              .Where(r => r.ClienteID == clienteId)
+              .ToListAsync();
+
+            if (reservas.Count == 0)
+            {
+                return NotFound("Nenhuma reserva encontrada para o cliente informado.");
+            }
+
+            return reservas;
+        }
+
+
         private bool ReservaExists(int id)
         {
             return _context.Reservas.Any(e => e.ID == id);
