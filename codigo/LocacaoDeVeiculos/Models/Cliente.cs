@@ -15,6 +15,12 @@ namespace LocacaoDeVeiculos.Models
         public string Telefone { get; set; }
 
         public string Email { get; set; }
+        public ICollection<Reserva> Reservas { get; set; }
+
+        public Cliente()
+        {
+               Reservas = new List<Reserva>();
+        }
 
     }
 }
