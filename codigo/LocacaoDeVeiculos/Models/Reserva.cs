@@ -10,11 +10,11 @@ namespace LocacaoDeVeiculos.Models
 
         [Required]
         [ForeignKey("Cliente")]
-        public int IDCliente { get; set; }
+        public int ClienteID { get; set; }
 
         [Required]
         [ForeignKey("Veiculo")]
-        public int IDVeiculo { get; set; }
+        public int VeiculoID { get; set; }
 
         [Required]
         public DateTime Data_Inicio { get; set; }

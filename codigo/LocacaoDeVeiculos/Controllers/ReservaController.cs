@@ -76,10 +76,28 @@ namespace LocacaoDeVeiculos.Controllers
                 return BadRequest(ModelState);
             }
 
-            _context.Reservas.Add(reserva);
+            var cliente = await _context.Clientes.FindAsync(reserva.ClienteID);
+            var veiculo = await _context.Veiculos.FindAsync(reserva.VeiculoID);
+
+            if (cliente == null || veiculo == null)
+            {
+                return BadRequest("Cliente ou Veículo não encontrados.");
+            }
+
+            var novaReserva = new Reserva
+            {
+                ClienteID = reserva.ClienteID,
+                VeiculoID = reserva.VeiculoID,
+                Data_Inicio = reserva.Data_Inicio,
+                Data_Final = reserva.Data_Final,
+                Valor = reserva.Valor,
+                Status = reserva.Status
+            };
+
+            _context.Reservas.Add(novaReserva);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetReserva", new { id = reserva.ID }, reserva);
+            return CreatedAtAction("GetReserva", new { id = novaReserva.ID }, novaReserva);
         }
 
         // DELETE: api/Reservas/5
