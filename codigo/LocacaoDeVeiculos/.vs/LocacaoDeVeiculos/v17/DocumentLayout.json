@@ -1,22 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\",
+  "WorkspaceRootPath": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\onedrive\\\u00E1rea de trabalho\\faculdade\\4o_periodo\\tads\\trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\locacaodeveiculos.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:locacaodeveiculos.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\onedrive\\\u00E1rea de trabalho\\faculdade\\4o_periodo\\tads\\trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\onedrive\\\u00E1rea de trabalho\\faculdade\\4o_periodo\\tads\\trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\controllers\\veiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:controllers\\veiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\locacaodeveiculos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:locacaodeveiculos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\onedrive\\\u00E1rea de trabalho\\faculdade\\4o_periodo\\tads\\trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\models\\statusreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:models\\statusreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\onedrive\\\u00E1rea de trabalho\\faculdade\\4o_periodo\\tads\\trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\onedrive\\\u00E1rea de trabalho\\faculdade\\4o_periodo\\tads\\trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|c:\\users\\davir\\onedrive\\\u00E1rea de trabalho\\faculdade\\4o_periodo\\tads\\trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\locacaodeveiculos\\models\\veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE4F882-C94B-4C74-8FA5-E5BD5A08D5E0}|LocacaoDeVeiculos.csproj|solutionrelative:models\\veiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,53 +41,103 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LocacaoDeVeiculos.http",
-              "DocumentMoniker": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\LocacaoDeVeiculos.http",
-              "RelativeDocumentMoniker": "LocacaoDeVeiculos.http",
-              "ToolTip": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\LocacaoDeVeiculos.http",
-              "RelativeToolTip": "LocacaoDeVeiculos.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-04-13T22:46:20.214Z"
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-13T22:46:12.924Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
+              "Title": "ReservaController.cs",
+              "DocumentMoniker": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Controllers\\ReservaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservaController.cs",
+              "ToolTip": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Controllers\\ReservaController.cs",
+              "RelativeToolTip": "Controllers\\ReservaController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAkwHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T22:25:58.268Z",
+              "WhenOpened": "2024-04-28T14:53:56.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LocacaoDeVeiculos.csproj",
-              "DocumentMoniker": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\LocacaoDeVeiculos.csproj",
-              "RelativeDocumentMoniker": "LocacaoDeVeiculos.csproj",
-              "ToolTip": "C:\\Users\\davir\\source\\repos\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\LocacaoDeVeiculos.csproj",
-              "RelativeToolTip": "LocacaoDeVeiculos.csproj",
+              "Title": "StatusReserva.cs",
+              "DocumentMoniker": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\StatusReserva.cs",
+              "RelativeDocumentMoniker": "Models\\StatusReserva.cs",
+              "ToolTip": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\StatusReserva.cs",
+              "RelativeToolTip": "Models\\StatusReserva.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:04:43.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VeiculoController.cs",
+              "DocumentMoniker": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Controllers\\VeiculoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VeiculoController.cs",
+              "ToolTip": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Controllers\\VeiculoController.cs",
+              "RelativeToolTip": "Controllers\\VeiculoController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAowF8AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:20:42.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "Models\\Reserva.cs",
+              "ToolTip": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\Reserva.cs",
+              "RelativeToolTip": "Models\\Reserva.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAADwvyEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:59:57.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "Data\\ApplicationContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:20:03.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Veiculo.cs",
+              "DocumentMoniker": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\Veiculo.cs",
+              "RelativeDocumentMoniker": "Models\\Veiculo.cs",
+              "ToolTip": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\Veiculo.cs",
+              "RelativeToolTip": "Models\\Veiculo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-13T22:33:26.661Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T16:56:25.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\davir\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\4o_periodo\\TADS\\Trabalho\\psg-tads-2024-1-back-bd-dxvinci\\codigo\\LocacaoDeVeiculos\\Models\\Cliente.cs",
+              "RelativeToolTip": "Models\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:04:39.49Z",
+              "EditorCaption": ""
             }
           ]
         }

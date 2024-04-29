@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LocacaoDeVeiculos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90ac940a6d27ede5d34c026df6340d898188db6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0285d3977cbe63ba52249a7b8735992c0f13291b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LocacaoDeVeiculos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LocacaoDeVeiculos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
