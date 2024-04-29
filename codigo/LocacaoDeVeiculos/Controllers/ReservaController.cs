@@ -119,6 +119,9 @@ namespace LocacaoDeVeiculos.Controllers
                 return BadRequest("Status de reserva inválido.");
             }
 
+            var diasDeLocacao = (reserva.Data_Final - reserva.Data_Inicio).Days + 1;
+            reserva.Valor = diasDeLocacao * veiculo.Valor_Diaria;
+
             var novaReserva = new Reserva
             {
                 ClienteID = reserva.ClienteID,
