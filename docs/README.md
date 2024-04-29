@@ -1,5 +1,5 @@
 # Documentação do Projeto
 
 A documentação do projeto é composta pelos seguintes itens: 
- - [Relatório](docs/relatorio/Relatorio.pdf)
+ - [Relatório](relatorio/Relatorio.pdf)
 
